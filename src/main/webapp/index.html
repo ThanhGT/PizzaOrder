@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Ordering Application</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>Welcome to my Pizza Ordering App</h1>
+
+        <!-- form for customer contact info -->
+        <!-- pass the form to StartOrder servlet, using the GET method -->
+        <form action = "StartOrder.do" method="GET">
+
+            <label>Name</label>
+            <input type = "text" name="name" required><br>
+
+            <label>Phone</label>
+            <input type ="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+            <label>&nbsp</label>
+            <input type="submit" value="Start Order" id="submit">
+        </form>
+
+    </body>
+</html>
